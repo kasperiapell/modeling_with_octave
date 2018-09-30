@@ -1,3 +1,5 @@
+% Plots uniformly distributed random numbers
+% in 2D / 3D 
 
 function bootstrap(n, p)
   q = 2 * p; 

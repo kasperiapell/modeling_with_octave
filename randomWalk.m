@@ -1,3 +1,5 @@
+% Real-valued random walk in 2D 
+
 function randomWalk(w)
   x = (10);
   i = 1;    

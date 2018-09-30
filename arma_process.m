@@ -1,3 +1,5 @@
+% Simulating an ARMA process
+
 function arma_process(phi, y, theta)
   for i = 1:9
     epsilon = unifrnd(-1,1);

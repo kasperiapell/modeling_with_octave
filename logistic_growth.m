@@ -1,3 +1,5 @@
+% Model from Alligood, Sauer, and Yorke (1997)
+
 function logistic_growth(x, n, v)
   g = 2 * x * (1 - x);
   n = n - 1;

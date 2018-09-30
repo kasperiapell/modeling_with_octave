@@ -1,3 +1,5 @@
+% Simulates a moving average process 
+
 function moving_average(theta)
   for i = 1:16
     e = unifrnd(-1,1);

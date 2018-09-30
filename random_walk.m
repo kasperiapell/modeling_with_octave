@@ -1,3 +1,5 @@
+% Vector-valued random walk in two dimensions 
+
 function random_walk(x,y,t,xv,yv)
   y_epsilon = unifrnd(-1,1);
   x_epsilon = unifrnd(-1,1);

@@ -1,3 +1,5 @@
+% Simulates an AR process
+
 function graph_ar_process(z, phi, y, n, v)
   for i = 1:z
     ar_process(phi,y,n,[],i)
