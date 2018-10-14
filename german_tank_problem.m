@@ -1,6 +1,6 @@
 
-% The method to estimate N from n observations
-% collected from uniform distribution 1, 2, ..., N.
+% Two methods to estimate N from a random sample drawn from 
+% a sequence 1, 2, 3, ..., N.
 % Idea from the German Tank problem
 % (https://en.wikipedia.org/wiki/German_tank_problem)
 
