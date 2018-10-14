@@ -1,7 +1,8 @@
 % Describes a feedback loop between A and B where any increase in B will
-% increase A by alpha, and b will in turn be increased by A times alpha
-% squared, and so on, resulting in an infinite geometric series, the sum of
-% which we can calculate. 
+% increase A by alpha, and B will in turn be increased by A times alpha
+% squared, and so on, resulting in an infinite geometric series where every
+% second term increases B and the rest increase A or vice versa, and which
+% we can calculate.
 
 function s = infinite_feedback_series(dA, dB, alpha) 
   if dA == 0
