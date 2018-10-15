@@ -1,5 +1,7 @@
-% Solves the neoclassical growth model in one of its most simplest formats,
-% where the optimisation is conducted by a social planner. 
+% Finds a numerical solution to the neoclassical growth model in one of 
+% its most simplest formats, where the optimisation is conducted by a 
+% social planner. The problem need not be solved numerically as it has 
+% an analytic solution.
 
 function x = basic_neoclassical_growth_model
     beta = 0.5; 
