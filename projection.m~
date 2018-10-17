@@ -1,6 +1,0 @@
-% Custom function for a projection of x into vector space S spanned by (1 
-
-function y = projection(X, x)
- P = X * inv(X' * X) * X'; 
- y = P * x; 
-end 
