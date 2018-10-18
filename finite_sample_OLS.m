@@ -22,13 +22,13 @@ function [beta_hat, epsilon_hat, t_values, F] = finite_sample_OLS(X, y)
   s2 = dot(epsilon_hat, epsilon_hat) / (n - K); % OLS estimate of sigma^2
   s = sqrt(s2); % Standard error of the regression 
   R2_u = dot(y_hat, y_hat) / dot(y, y); % Uncentered R^2
-  Var_hat_beta_given_X = s2 * inv(X' * X); 
-  SE_vector = sqrt(diag(s2 * inv(X' * X))); 
+  Var_hat_beta_given_X = s2 * inv(X' * X); % Estimate of (the variance of beta_hat conditional on X)
+  SE_vector = sqrt(diag(s2 * inv(X' * X))); % Vector of standard errors for the coefficients
   
   % Calculates t-value vector with null hypotheses of beta_k = 0
   t_values = beta_hat ./ SE_vector; 
   
-  % Calculates F test for all coefficients 
+  % Calculates F test for all coefficients, with H_0 = B_1 = ... = 0
   R = eye(n); 
   r = zeros(n, 1); 
   F = ((R * beta_hat - r)' * inv(R * inv(X' * X) * R') * (R * beta_hat - r) / n) / s2; 
