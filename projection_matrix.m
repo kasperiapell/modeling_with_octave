@@ -3,7 +3,7 @@
 % In other words, finds the point in S that is closest in Euclidean
 % distance to the point x = (1, 1, 1).
 
-function y = projection(X, x)
+function y = projection_matrix(X, x)
  P = X * inv(X' * X) * X'; 
  y = P * x; 
 end 
