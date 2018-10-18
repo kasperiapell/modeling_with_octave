@@ -13,7 +13,7 @@
     % Sxy = (1/n) * X' * y;
     % beta = inv(Sxx) * Sxy; 
 
-function [beta_hat, epsilon_hat, t_values, F] = finite_sample_OLS(X, y)
+function [beta_hat, epsilon_hat, t_values] = finite_sample_OLS(X, y)
   [n, K] = size(X); 
   beta_hat = inv(X' * X) * X' * y;
   epsilon_hat = y - X * beta_hat; 
@@ -30,7 +30,6 @@ function [beta_hat, epsilon_hat, t_values, F] = finite_sample_OLS(X, y)
   
   % Calculates F test for all coefficients 
   R = eye(n); 
-  r = zeros(n, 1); 
-  F = ((R * beta_hat - r)' * inv(R * inv(X' * X) * R') * (R * beta_hat - r) / n) / s2; 
+  r = ze
   
 end 
